@@ -9,19 +9,19 @@ class FormValidator extends Validator
 {
     protected $errorHandler;
     protected $rules = [
-        'isMinLength',
-        'isMaxLength',
+        'minLength',
+        'maxLength',
         'matches',
         'hasNoSpecialChars',
-        'isTimeStamp',
-        'isYearMonth',
-        'isAlphabetic',
-        'isAlphaNumeric',
-        'isDigit',
-        'isEmail',
-        'isUrl',
-        'isName',
-        'isRequired',
+        'timeStamp',
+        'yearMonth',
+        'alphabetic',
+        'alphaNumeric',
+        'digit',
+        'email',
+        'url',
+        'name',
+        'required',
         'checkUnique'
     ];
 
@@ -29,18 +29,18 @@ class FormValidator extends Validator
     private $failed = false;
 
     public $messages = [
-        'isMinLength'       => 'The :field field must be a minimum of :satisfier length',
-        'isMaxLength'       => 'The :field field must be a maximum of :satisfier length',
+        'minLength'         => 'The :field field must be a minimum of :satisfier length',
+        'maxLength'         => 'The :field field must be a maximum of :satisfier length',
         'matches'           => 'The field :field must match the :field_match field',
         'hasNoSpecialChars' => 'No special characters allowed',
-        'isTimeStamp'       => 'Must be a timestamp formatted as <em>YYYY-MM-DD</em>',
-        'isYearMonth'       => 'Must be time and year formatted as <em>YYYY-MM</em>',
-        'isAlphabetic'      => 'Must only contain letters',
-        'isAlphaNumeric'    => 'Must only contain letters and numbers',
-        'isDigit'           => 'Must only contain numbers',
-        'isEmail'           => 'That is not a valid e-mail-address',
-        'isName'            => 'Must only contain letters and spaces',
-        'isRequired'        => 'The :field field is required',
+        'timeStamp'         => 'Must be a timestamp formatted as <em>YYYY-MM-DD</em>',
+        'yearMonth'         => 'Must be time and year formatted as <em>YYYY-MM</em>',
+        'alphabetic'        => 'Must only contain letters',
+        'alphaNumeric'      => 'Must only contain letters and numbers',
+        'digit'             => 'Must only contain numbers',
+        'email'             => 'That is not a valid e-mail-address',
+        'name'              => 'Must only contain letters and spaces',
+        'required'          => 'The :field field is required',
         'checkUnique'       => 'The field :field must be unique',
     ];
 
