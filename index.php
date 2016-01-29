@@ -13,19 +13,19 @@
 
         $validation = $formValidator->check($_POST, [
             'username' => [
-                'isRequired' => true,
-                'isMaxLength' => 20,
-                'isMinLength' => 5,
-                'isAlphaNumeric' => true
+                'required' => true,
+                'maxLength' => 20,
+                'minLength' => 5,
+                'alphaNumeric' => true
             ],
             'email' => [
-                'isRequired' => true,
-                'isMaxLength' => 255,
-                'isEmail' => true
+                'required' => true,
+                'maxLength' => 255,
+                'rmail' => true
             ],
             'password' => [
-                'isRequired' => true,
-                'isMinLength' => 6
+                'required' => true,
+                'minLength' => 6
             ],
             'password_again' => [
                 'matches' => 'password'
