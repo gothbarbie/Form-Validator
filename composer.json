@@ -1,0 +1,14 @@
+{
+    "name": "gothbarbie/Form-Validator",
+    "description": "Form-Validator class",
+    "keywords": "php",
+    "version": "1.0.0",
+    "require": {
+        "php": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gothbarbie\\": "form-validator"
+        }
+    }
+}
