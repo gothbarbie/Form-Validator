@@ -1,5 +1,5 @@
 # FormValidator
-A PHP form-validating class, implementing the [Validator-class](https://github.com/gothbarbie/validator) to validate form data.
+A PHP form-validating class, implementing the [Validator-class](https://github.com/gothbarbie/validator) and the [ErrorHandler-class](https://github.com/gothbarbie/Error-Handler) to validate form data.
 
 ## Files
 * FormValidator.php
